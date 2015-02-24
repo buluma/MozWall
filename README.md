@@ -1,6 +1,6 @@
-# TwitterFontana
+# MozWall
 
-TwitterFontana is a backchannel visualisation solution for the Twitter
+MozWall is a backchannel visualisation solution for the Twitter
 Search API v1.1.
 
 The Twitter API connection backend is written in [Python] & [Flask] and the
@@ -99,7 +99,7 @@ $ grunt
 ## Develop
 
 Cool, you got the initial set up out of the way. Luckily you don't need to
-do all of this each time you want to work on TwitterFontana. From now on just
+do all of this each time you want to work on MozWall. From now on just
 run these commands to get a development server:
 
 ``` shell
