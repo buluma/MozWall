@@ -1,10 +1,10 @@
 {
-    "name":"TwitterFontana",
-    "repository":"https://github.com/eightmedia/TwitterFontana",
-    "version":"2.0.0",
-    "description":"TwitterFontana is a backchannel visualisation solution for the Twitter",
-    "author":"Jaap Roes",
-    "license":"MIT",
+    "name":"Mozilla Wall",
+    "repository":"https://github.com/ariestiyansyah/MozWall",
+    "version":"1.0.6",
+    "description":"Mozilla Wall fot Mozilla event",
+    "author":"ariestiyansyah",
+    "license":"WTFPL",
     "dependencies":{
         "grunt":"0.4",
         "grunt-contrib-jade":"0.8",
