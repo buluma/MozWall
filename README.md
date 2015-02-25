@@ -1,5 +1,7 @@
 # MozWall
 
+![](https://magnum.travis-ci.com/ariestiyansyah/MozWall.svg?token=hPuxgNQnEXgG9b2mx45v&branch=master) 
+
 MozWall is a backchannel visualisation solution for the Twitter Search API v1.1 based on Twitter Fontana.
 
 The Twitter API connection backend is written in [Python] & [Flask] and the visualisation frontend is written in [CoffeeScript] and has CSS
