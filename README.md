@@ -40,8 +40,8 @@ a random secret key soon.
 With that out of the way, you can now "install" the project in a virtualenv:
 
 ``` shell
-$ mkvirtualenv twitterfontana
-$ workon twitterfontana
+$ mkvirtualenv develop
+$ workon develop
 $ pip install -r requirements.txt
 ```
 
@@ -103,7 +103,7 @@ do all of this each time you want to work on MozWall. From now on just
 run these commands to get a development server:
 
 ``` shell
-$ workon twitterfontana
+$ workon develop
 $ python backend/src/app.py backend/var/conf/fontana.conf
 > * Running on http://127.0.0.1:5000/
 ```
