@@ -1,10 +1,8 @@
 # MozWall
 
-MozWall is a backchannel visualisation solution for the Twitter
-Search API v1.1.
+MozWall is a backchannel visualisation solution for the Twitter Search API v1.1 based on Twitter Fontana.
 
-The Twitter API connection backend is written in [Python] & [Flask] and the
-Fontana visualisation frontend is written in [CoffeeScript] and has CSS
+The Twitter API connection backend is written in [Python] & [Flask] and the visualisation frontend is written in [CoffeeScript] and has CSS
 animations through Compass & [SASS].
 
 The HTML for the website is generated using [Jade] and styling & layout
@@ -53,18 +51,18 @@ $ bundle install
 ```
 
 Then you'll need to create a config file, let's save it as
-`backend/var/conf/fontana.conf`.
+`backend/var/conf/mozwall.conf`.
 
 In this file, enter the credentials for the Twitter application you've created
 and one of the random "Ft. Knox Passwords":
 
 ``` python
 TWITTER = {
-    'consumer-key': 'mYc0nsUm3rK3y',
-    'consumer-secret': 'xtH1s1sSuP3rs3cREtX'
+    'consumer-key': 'xxxwerjewjrelwknelwk320',
+    'consumer-secret': 'dbg93geufbfgeoh'
 }
 
-SECRET_KEY = '%S#cR3T$(~4re>Aws0me{;?='
+SECRET_KEY = '%S#cR3T$(~4re>Awes0me{;?='
 ```
 
 ### Verify
@@ -75,11 +73,11 @@ by trying to sign in with Twitter.
 First start the development server:
 
 ``` shell
-$ python backend/src/app.py backend/var/conf/fontana.conf
-> * Running on http://127.0.0.1:5000/
+$ python backend/src/app.py backend/var/conf/mozwall.conf
+> * Running on http://0.0.0.0:5000/
 ```
 
-Now go to `http://localhost:5000/api/twitter/session/new/`.
+Now go to `http://0.0.0.0:5000/api/twitter/session/new/`.
 
 If everything is working correctly you will be redirected to twitter.com
 and asked to "Authorize your application to use your account".
@@ -104,8 +102,8 @@ run these commands to get a development server:
 
 ``` shell
 $ workon develop
-$ python backend/src/app.py backend/var/conf/fontana.conf
-> * Running on http://127.0.0.1:5000/
+$ python backend/src/app.py backend/var/conf/mozwall.conf
+> * Running on http://0.0.0.0:5000/
 ```
 
 And in another terminal window you can keep running Grunt:
