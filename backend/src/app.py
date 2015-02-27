@@ -3,6 +3,7 @@ import json
 import os
 import sys
 from fontana import twitter
+from flask import render_template
 
 app = flask.Flask('fontana')
 
