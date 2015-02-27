@@ -119,7 +119,7 @@ def devserver(extra_conf=None):
         '/index.html': app.config['STATIC_DIR']
     })
     # Setup a index.html redirect for convenience sake.
-    app.route('/')(lambda: flask.redirect('/index.html'))
+    app.route('/')(lambda: flask.redirect('/'))
     # Run the development server
     app.run(host='0.0.0.0', port=80)
 
