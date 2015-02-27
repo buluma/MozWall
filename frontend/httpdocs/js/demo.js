@@ -232,7 +232,7 @@
         settings = {};
       }
       if (q == null) {
-        q = "TwitterFontana";
+        q = "Mozilla";
       }
       if (visualizer) {
         visualizer.stop();

@@ -206,8 +206,8 @@ the Twitter datasource) will provide a richer set of keys.
                     created_at: new Date().toString(),
                     text: 'Your search term returned no Tweets :(',
                     user: {
-                      name: 'Twitter Fontana',
-                      screen_name: 'twitterfontana',
+                      name: 'Mozilla Wall',
+                      screen_name: 'mozwall',
                       profile_image_url: '/img/avatar.png'
                     }
                   }
@@ -223,8 +223,8 @@ the Twitter datasource) will provide a richer set of keys.
                 created_at: new Date().toString(),
                 text: 'Error fetching tweets :(',
                 user: {
-                  name: 'Twitter Fontana',
-                  screen_name: 'twitterfontana',
+                  name: 'Mozilla Wall',
+                  screen_name: 'mozwall',
                   profile_image_url: '/img/avatar.png'
                 }
               }
