@@ -3,7 +3,6 @@ import json
 import os
 import sys
 from fontana import twitter
-from flask import render_template
 
 app = flask.Flask('fontana')
 
@@ -117,10 +116,10 @@ def devserver(extra_conf=None):
         app.config.from_pyfile(os.path.join(root, extra_conf))
     # Serve the frontend files
     app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
-        '/index.html': app.config['STATIC_DIR']
+        '/': app.config['STATIC_DIR']
     })
     # Setup a index.html redirect for convenience sake.
-    app.route('/')(lambda: render_template('/index.html'))
+    app.route('/')(lambda: flask.redirect('/index.html'))
     # Run the development server
     app.run(host='0.0.0.0', port=80)
 
