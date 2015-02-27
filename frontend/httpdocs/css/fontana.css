@@ -3,8 +3,8 @@ body {
 }
 
 .navbar-default {
-	background-color:#166AB2;
-	border-color:#166AB2
+	background-color:#da2d32;
+	border-color:#da2d42
 }
 
 .navbar-default .navbar-brand,
@@ -20,7 +20,7 @@ body {
 }
 
 .btn-default {
-	background-color:#044984;
+	background-color:#da2d32;
 	border-color:#044984;
 	color:#f9f8f7
 }
