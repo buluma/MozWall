@@ -3,6 +3,7 @@ import json
 import os
 import sys
 from fontana import twitter
+from flask import render_template, make_response
 
 app = flask.Flask('fontana')
 
@@ -92,6 +93,12 @@ def signout():
     """
     flask.session.clear()
     return 'OK'
+
+@app.route('/manifest.webapp')
+def manifest():
+    res = make_response(render_template('manifest.webapp'), 200)
+    res.headers["Content-Type"] = "application/x-web-app-manifest+json"
+    return res
 
 
 def absolute_url(name):
