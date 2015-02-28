@@ -1,22 +1,20 @@
-
 {
-"name": "Mozilla Wall",
-"version": "1.0",
-"description": "Tweet Wall for Mozillians",
-"launch_path": "/",
-"icons": {
-"256": "/img/256.png",
-"128": "/img/128.png",
-"120": "/img/120.png",
-"90": "/img/90.png",
-"60": "/img/60.png",
-"32": "/img/32.png"
-},
-"developer": {
-"name": "Rizky Ariestiyansyah",
-"url": "http://oonlab.com"
-},
-"orientation": ["portrait"],
-"default_locale": "en",
-"installs_allowed_from":["*"]
+  "name": "Mozilla Wal",
+  "version": "1.0",
+  "description": "Tweet Wall for Mozillians",
+  "launch_path": "/index.html",
+  "icons": {
+    "256": "/img/256.png",
+    "128": "/img/128.png",
+    "120": "/img/120.png",
+    "90": "/img/90.png",
+    "60": "/img/60.png",
+    "32": "/img/32.png"
+  },
+  "developer": {
+    "name": "Rizky Ariestiyansyah",
+     "url": "http://oonlab.com"
+  },
+  "orientation": ["portrait"],
+  "default_locale": "en"
 }
