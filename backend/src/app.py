@@ -97,7 +97,7 @@ def signout():
 @app.route('/manifest.webapp')
 def manifest():
     data = json.dumps({
-        "name": "Mozilla Wal",
+        "name": "Mozilla Wall",
         "version": "1.0",
         "description": "Tweet Wall for Mozillians",
         "launch_path": "/",
