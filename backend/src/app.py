@@ -3,7 +3,7 @@ import json
 import os
 import sys
 from fontana import twitter
-from flask import render_template, request
+from flask import render_template, request, jsonify
 
 app = flask.Flask('fontana')
 
@@ -46,6 +46,12 @@ def twitter_authorisation_done():
     else:
         return flask.abort(403, 'unknown sign in failure')
 
+def request_wants_json():
+    best = request.accept_mimetypes \
+        .best_match(['application/json', 'text/html'])
+    return best == 'application/json' and \
+        request.accept_mimetypes[best] > \
+        request.accept_mimetypes['text/html']
 
 @app.route('/api/twitter/session/new/')
 def twitter_signin():
@@ -95,10 +101,11 @@ def signout():
     return 'OK'
 
 @app.route('/manifest.webapp')
-def get_manifest():
-    hash = request.host.split('.', 1)[0]
-    return (render_template('manifest.webapp', hash=hash),
-            200, {'Content-Type': 'application/x-web-app-manifest+json'})
+def show_items():
+    items = get_items_from_database()
+    if request_wants_json():
+        return jsonify(items=[x.to_json() for x in items])
+    return render_template('manifest.webapp', items=items)
 
 
 def absolute_url(name):
