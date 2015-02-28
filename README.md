@@ -1,6 +1,6 @@
 # MozWall
 
-[![Build Status](https://magnum.travis-ci.com/ariestiyansyah/MozWall.svg?token=hPuxgNQnEXgG9b2mx45v&branch=master)](https://magnum.travis-ci.com/ariestiyansyah/MozWall)
+[![Build Status](https://magnum.travis-ci.com/ariestiyansyah/MozWall.svg?token=hPuxgNQnEXgG9b2mx45v&branch=master)](https://magnum.travis-ci.com/ariestiyansyah/MozWall) [![security](https://hakiri.io/github/ariestiyansyah/MozWall/master.svg)](https://hakiri.io/github/ariestiyansyah/MozWall/master)
 
 MozWall is a backchannel visualisation solution for the Twitter Search API v1.1 based on [Twitter Fontana].
 
