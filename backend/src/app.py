@@ -3,7 +3,7 @@ import json
 import os
 import sys
 from fontana import twitter
-from flask import render_template, request, jsonify
+from flask import render_template, request, Response
 
 app = flask.Flask('fontana')
 
@@ -46,12 +46,6 @@ def twitter_authorisation_done():
     else:
         return flask.abort(403, 'unknown sign in failure')
 
-def request_wants_json():
-    best = request.accept_mimetypes \
-        .best_match(['application/json', 'text/html'])
-    return best == 'application/json' and \
-        request.accept_mimetypes[best] > \
-        request.accept_mimetypes['text/html']
 
 @app.route('/api/twitter/session/new/')
 def twitter_signin():
@@ -101,11 +95,28 @@ def signout():
     return 'OK'
 
 @app.route('/manifest.webapp')
-def show_items():
-    items = get_items_from_database()
-    if request_wants_json():
-        return jsonify(items=[x.to_json() for x in items])
-    return render_template('manifest.webapp', items=items)
+def manifest():
+    data = json.dumps({
+        "name": "Mozilla Wal",
+        "version": "1.0",
+        "description": "Tweet Wall for Mozillians",
+        "launch_path": "/",
+        "icons": {
+            "256": "/img/256.png",
+            "128": "/img/128.png",
+            "120": "/img/120.png",
+            "90": "/img/90.png",
+            "60": "/img/60.png",
+            "32": "/img/32.png"
+        },
+        "developer": {
+        "name": "Rizky Ariestiyansyah",
+        "url": "http://oonlab.com"
+        },
+        "orientation": ["portrait"],
+        "default_locale": "en"
+    })
+    return Response(data, mimetype='application/x-web-app-manifest+json')
 
 
 def absolute_url(name):

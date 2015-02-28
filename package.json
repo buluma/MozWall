@@ -2,7 +2,7 @@
     "name":"Mozillawall",
     "repository":"https://github.com/ariestiyansyah/MozWall",
     "version":"1.0.6",
-    "description":"Mozilla Wall fot Mozilla event",
+    "description":"Tweet Wall for Mozillians",
     "author":"ariestiyansyah",
     "license":"WTFPL",
     "dependencies":{
