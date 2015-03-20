@@ -146,7 +146,7 @@ def devserver(extra_conf=None):
     # Setup a index.html redirect for convenience sake.
     app.route('/')(lambda: flask.redirect('/index.html'))
     # Run the development server
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=80, debug=True)
 
 
 if __name__ == "__main__":
