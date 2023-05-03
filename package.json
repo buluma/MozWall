@@ -6,13 +6,13 @@
     "author":"buluma",
     "license":"WTFPL",
     "dependencies":{
-        "grunt":"1.6.1",
-        "grunt-contrib-jade":"1.0.0",
-        "grunt-contrib-compass":"1.1.1",
-        "grunt-contrib-uglify":"5.2.2",
-        "grunt-contrib-concat":"2.1.0",
-        "grunt-contrib-watch":"1.1.0",
-        "grunt-contrib-imagemin":"4.0.0",
+        "grunt": "1.6",
+        "grunt-contrib-jade": "1.0",
+        "grunt-contrib-compass": "1.1",
+        "grunt-contrib-uglify": "5.2",
+        "grunt-contrib-concat": "2.1",
+        "grunt-contrib-watch": "1.1",
+        "grunt-contrib-imagemin": "4.0",
         "coffee-script":"*"
     }
 }
