@@ -1,9 +1,9 @@
 {
     "name":"Mozillawall",
-    "repository":"https://github.com/ariestiyansyah/MozWall",
+    "repository":"https://github.com/buluma/MozWall",
     "version":"1.0.6",
     "description":"Tweet Wall for Mozillians",
-    "author":"ariestiyansyah",
+    "author":"buluma",
     "license":"WTFPL",
     "dependencies":{
         "grunt":"0.4",
